@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(python -m http.server:*)"
-    ],
-    "deny": [],
-    "ask": []
-  }
-}
