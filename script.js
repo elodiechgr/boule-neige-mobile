@@ -244,16 +244,6 @@ function setupShakeDetection() {
                 if (variation > 5) {
                     shake();
 
-                    const info = document.getElementById('info');
-                    if (info) {
-                        info.textContent = `🌨️ Shake détecté ! Intensité: ${variation.toFixed(1)}`;
-                        info.style.background = 'rgba(0,200,100,0.8)';
-                        setTimeout(() => {
-                            info.textContent = 'Secouez votre téléphone ! 🌨️';
-                            info.style.background = 'rgba(0,0,0,0.7)';
-                        }, 1000);
-                    }
-
                     throttle = true;
                     setTimeout(() => throttle = false, 100);
                 }
